@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper section {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Bottom*/
+section.bottom {
+
+}
+/*Two bottom sections*/
+section.left_bottom {
+    display: flex;
+    flex: 0 1 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.right_bottom {
+    flex: 0 1 50%;
+}
+/*Input sections*/
+section.add_constant {
+
+}
+.input_description {
+    margin-right: 7px;
+
+}
+.input_description._center {
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+/*All input sections*/
+section._add_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section._add_section._vertical {
+    flex-direction: column;
+    width: 100%;
+}
+
+.left_bottom_head {
+    margin-top: 15px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#select_variable_type {
+    padding: 8px;
+    font-size: 14px;
+}
+.values > * {
+    flex: 1 0 33%;
+    background-color: aquamarine;
+    padding: 10px;
+
+}
+.constants {
+
+}
+.variables {
+
+}
+.connections {
+
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.list {
+    background-color: rgb(255, 198, 208);
+
+    min-height: 150px;
+    overflow-y: auto;
+}
+.btn_add {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(150, 150, 243);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-weight: 700;
+}
+.btn_add:hover {
+    background-color: rgb(128, 128, 240);
+}
+
+input {
+    padding: 7px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.flex._column {
+    flex-direction: column;
+}
+.flex_center {
+    align-items: center;
+
+}
+.flex_center._mr {
+    margin-right: 5px;
+}
+._mb {
+    margin-bottom: 5px;
+}
