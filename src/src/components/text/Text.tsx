@@ -8,7 +8,6 @@ interface IProps {
 
 }
 
-
 export const Text: React.FC<IProps> = () => {
 
     const bftText = useSelector((state: RootState) => state.bftText.bftText)
@@ -19,7 +18,7 @@ export const Text: React.FC<IProps> = () => {
     }
 
     return (
-        <section className="root right_bottom">
+        <section className="root">
             <div className="title">
                 BFT-файл
             </div>

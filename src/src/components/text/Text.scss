@@ -29,5 +29,7 @@
     }
   }
 
-
+  @media (max-width: 750px) {
+    flex: 1 1 100%;
+  }
 }
