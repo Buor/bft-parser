@@ -1,8 +1,9 @@
 import React from 'react'
-import './src/styles/styles.css'
+import './src/styles/styles.scss'
 import {Values} from "./src/components/values/Values"
 import {Add} from "./src/components/add/Add"
 import {Text} from "./src/components/text/Text"
+import './App.scss'
 
 // function reducer(state: IState, action: IAction) {
 //     console.log('here')
@@ -40,14 +41,12 @@ import {Text} from "./src/components/text/Text"
 function App() {
 
     return (
-        <div className="App">
-            <div className="wrapper">
-                <Values/>
-                <section className="bottom">
-                    <Add />
-                    <Text />
-                </section>
-            </div>
+        <div className="wrapper">
+            <Values/>
+            <section className="bottom">
+                <Add/>
+                <Text/>
+            </section>
         </div>
     )
 }

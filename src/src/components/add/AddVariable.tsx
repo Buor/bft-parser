@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import {useDispatch, useSelector} from "react-redux"
 import {RootState} from "../../reduxToolkit/store"
 import {addVariable} from "../../reduxToolkit/slices/storageSlice"
-
+import {ButtonUI} from "../../uiComponents/button/ButtonUI"
+import styles from './Add.module.scss'
 interface IProps {
 
 }
@@ -26,17 +27,17 @@ export const AddVariable: React.FC<IProps> = () => {
 
     return (
         <>
-            <section className="add_variable _add_section _vertical">
+            <section className={styles._add_section + " " + styles._vertical}>
                 <div className="flex">
                     <div className="flex_center _mr">
-                        <div className="input_description _center">
+                        <div className={styles.input_description + " " + styles._center}>
                             Название переменной
                         </div>
                         <input id="" type="text" value={variableName}
                                onChange={(e) => setVariableName(e.target.value)}/>
                     </div>
                     <div className="flex_center">
-                        <div className="input_description _center">
+                        <div className={styles.input_description + " " + styles._center}>
                             Значение
                         </div>
                         <input id="" type="text" value={variableValue}
@@ -44,7 +45,7 @@ export const AddVariable: React.FC<IProps> = () => {
                     </div>
                 </div>
             </section>
-            <button className="btn_add" onClick={handleClick}>Добавить</button>
+            <ButtonUI onClick={handleClick}>Добавить</ButtonUI>
         </>
     )
 }

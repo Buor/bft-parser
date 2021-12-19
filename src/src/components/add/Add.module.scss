@@ -1,0 +1,37 @@
+
+
+.section_add {
+  display: flex;
+  flex: 0 1 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left_bottom_head {
+  margin-top: 15px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input_description {
+  margin-right: 7px;
+
+}
+
+.input_description._center {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+._add_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._add_section._vertical {
+  flex-direction: column;
+  width: 100%;
+}
+

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Values.scss'
 
 export const Values: React.FC = () => {
     return (

@@ -1,30 +1,35 @@
 import React from 'react'
+import {ButtonUI} from "../../uiComponents/button/ButtonUI"
+import styles from './Add.module.scss'
 
 export const AddConnection: React.FC = () => {
+
+
+
     return (
         <>
-            <section className="add_connection _add_section">
+            <section className={styles._add_section}>
                 <div className="flex _column">
-                    <div className="input_description _center">Название связи</div>
+                    <div className={styles.input_description + " " + styles._center}>Название связи</div>
                     <input type="text" className="_mb"/>
                     <div className="flex">
                         <div className="flex_center _mr">
-                            <div className="input_description _center">
-                                Название переменной
+                            <div className={styles.input_description + " " + styles._center}>
+                                Переменная 1
                             </div>
-                            <input id="" type="text"/>
+                            <select></select>
                         </div>
                         <div className="flex_center">
-                            <div className="input_description _center">
-                                Значение
+                            <div className={styles.input_description + " " + styles._center}>
+                                Переменная 2
                             </div>
-                            <input id="" type="text"/>
+                            <select></select>
                         </div>
                     </div>
                 </div>
 
             </section>
-            <button className="btn_add">Добавить</button>
+            <ButtonUI>Добавить</ButtonUI>
         </>
     )
 }

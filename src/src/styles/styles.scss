@@ -1,0 +1,84 @@
+@import "vars";
+//Шрифты
+@font-face {
+    font-family: 'Whitney';
+    font-weight: 300;
+
+    src: url("./fonts/whitney_light.ttf");
+}
+
+@font-face {
+    font-family: 'Neuron';
+    font-weight: 300;
+
+    src: url("./fonts/neuron.ttf");
+}
+
+@font-face {
+    font-family: 'Gardens';
+    font-weight: 400;
+
+    src: url("./fonts/gardens.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202225;
+    color: white;
+    font-family: 'Whitney', sans-serif;
+}
+
+
+
+/*All input sections*/
+
+
+#select_variable_type {
+    padding: 8px;
+    font-size: 14px;
+}
+
+//Общие стили для всего проекта
+input {
+    padding: 10px;
+    background-color: $colGrayLight;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    color: white;
+}
+
+select {
+    padding: 7px;
+    background-color: $colGrayLight;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    color: white;
+}
+
+//Служебные стили
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex._column {
+    flex-direction: column;
+}
+
+.flex_center {
+    align-items: center;
+
+}
+
+.flex_center._mr {
+    margin-right: 5px;
+}
+
+._mb {
+    margin-bottom: 5px;
+}

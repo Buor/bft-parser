@@ -23,7 +23,9 @@ export const Text: React.FC<IProps> = () => {
             <div className="title">
                 BFT-файл
             </div>
-            <textarea value={bftText} onChange={(e) => handleChange(e.target.value)}/>
+            <code className="bftArea" contentEditable={"true"}>
+                <span style={{color: 'blue'}}>asd</span>
+            </code>
         </section>
     )
 }

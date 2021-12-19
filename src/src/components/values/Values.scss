@@ -1,0 +1,18 @@
+.values > * {
+  flex: 1 0 33%;
+  background-color: #2e3338;
+  padding: 10px;
+
+}
+.title {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+
+}
+.list {
+  background-color: #36393f;
+
+  min-height: 150px;
+  overflow-y: auto;
+}

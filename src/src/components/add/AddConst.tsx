@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import {ButtonUI} from "../../uiComponents/button/ButtonUI"
+import styles from './Add.module.scss'
 
 interface IProps {
 
@@ -16,10 +18,10 @@ export const AddConst: React.FC<IProps> = () => {
     return (
         <>
             <section className="add_constant _add_section">
-                <div className="input_description">Введите константу</div>
+                <div className={styles.input_description + " " + styles._center}>Введите константу</div>
                 <input type="text" value={constName} onChange={(e) => setConstName(e.target.value)}/>
             </section>
-            <button className="btn_add" onClick={handleClick}>Добавить</button>
+            <ButtonUI onClick={handleClick}>Добавить</ButtonUI>
         </>
     )
 }
